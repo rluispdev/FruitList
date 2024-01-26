@@ -8,10 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var fruitArray: [FruitModel] = []
+    
     var body: some View {
         NavigationStack{
             List{
-                
+                ForEach(fruitArray) { fruit in
+                    HStack {
+                        Text(fruit.name)
+                    }
+                }
             }
         }
     }
