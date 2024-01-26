@@ -28,6 +28,12 @@ struct ContentView: View {
                     }
                 }
             }
+            .listStyle(GroupedListStyle())
+            .navigationTitle("Fruit List")
+            .onAppear {
+                
+            }
+            
         }
     }
 }
